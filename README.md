@@ -18,6 +18,7 @@ Before running this demo, you'll need:
 - **npm** or **yarn**
 - **Rye API Key** - Get this from your Rye dashboard
 - **Stripe Account** - For payment processing
+- **Google Maps API Key** - For address autocomplete functionality
 
 ## Environment Setup
 
