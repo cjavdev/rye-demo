@@ -21,9 +21,9 @@ Before running this demo, you'll need:
 
 ## Environment Setup
 
-1. **Copy the environment file**:
+1. **Create a `.env` file** in the root directory:
    ```bash
-   cp .env.example .env
+   touch .env
    ```
 
 2. **Configure your environment variables** in `.env`:
@@ -35,6 +35,9 @@ Before running this demo, you'll need:
    # Stripe Configuration
    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key
    STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
+
+   # Google Maps API (for address autocomplete)
+   NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
    ```
 
    **Note**: Replace the placeholder values with your actual API keys and URLs.
@@ -160,6 +163,11 @@ rye-demo/
    - Verify your Stripe publishable and secret keys
    - Use test keys for development
    - Check Stripe dashboard for any webhook configuration
+
+4. **Google Maps Issues**
+   - Ensure `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` is set correctly
+   - Verify the API key has Places API enabled
+   - Check Google Cloud Console for API restrictions
 
 4. **Build Errors**
    - Clear `.next` directory: `rm -rf .next`
